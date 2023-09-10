@@ -88,7 +88,7 @@ class LoginScreen extends StatelessWidget {
                CustomButton(
                  fontSize: 15.sp,
                  onTap: (){
-                   Navigator.pushNamed(context, ScreensNames.homeMobile);
+                   Navigator.pushNamed(context, ScreensNames.bottomNav);
                  },
                  textColor: kBackGroundColor,
                  buttonColor: kPrimaryColor,
@@ -107,7 +107,7 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: 10.h,),
                CustomSocialButton(
                 onTap: (){
-                  Navigator.pushNamed(context, ScreensNames.homeMobile);
+                  Navigator.pushNamed(context, ScreensNames.bottomNav);
                 },
                 text:"Sign In With Facebook",
                 image:"assets/images/face_logo.png" ,
@@ -115,7 +115,7 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: 10.h,),
                CustomSocialButton(
                  onTap: (){
-                   Navigator.pushNamed(context, ScreensNames.homeMobile);
+                   Navigator.pushNamed(context, ScreensNames.bottomNav);
                  },
                 text:"Sign In With Google",
                 image:"assets/images/icons8_Google_2.png" ,

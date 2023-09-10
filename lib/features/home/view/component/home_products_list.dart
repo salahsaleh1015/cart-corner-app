@@ -1,3 +1,6 @@
+import 'package:cart_corner_app/core/models/product_model.dart';
+import 'package:cart_corner_app/core/router/screens_names.dart';
+import 'package:cart_corner_app/features/home/view/component/product_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/style/colors.dart';
@@ -23,20 +26,15 @@ class HomeProductList extends StatelessWidget {
       child: ListView.separated(
         physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
-        itemCount: productsImages.length,
+        itemCount: products.length,
         separatorBuilder: (context, i) {
           return SizedBox(
             width: 5.w,
           );
         },
         itemBuilder: (context , i){
-          return  Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Image.asset(productsImages[i]),
-              CustomText(text: productNames[i],  fontSize: 20.sp, color: kTextColor, fontWieght: FontWeight.normal),
-              CustomText(text: productPrices[i], fontSize: 15.sp, color: kPrimaryColor, fontWieght: FontWeight.normal)
-            ],
+          return  ProductItem(
+            product: products[i],
           );
         },
 

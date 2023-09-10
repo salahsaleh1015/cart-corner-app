@@ -8,7 +8,7 @@ import 'component/home_category_List.dart';
 import 'component/home_search_bar.dart';
 
 class HomeMobileView extends StatelessWidget {
-  HomeMobileView({super.key});
+  const HomeMobileView({super.key});
 
   @override
   Widget build(BuildContext context) {

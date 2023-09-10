@@ -16,9 +16,12 @@ class CustomText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
+      maxLines: 5,
+      overflow: TextOverflow.clip,
       textAlign: TextAlign.center,
       text,
       style: TextStyle(
+
 
         fontSize: fontSize,
         color: color,

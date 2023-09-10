@@ -7,18 +7,7 @@ import '../../../../core/style/colors.dart';
 import '../../../../widgets/custom_text.dart';
 class HomeProductList extends StatelessWidget {
    HomeProductList({super.key});
-  List<String> productsImages = [
-    "assets/images/product1.png",
-    "assets/images/product2.png",
-    "assets/images/product3.png",
-    "assets/images/product4.png"
-  ];
-  List<String> productNames = [
-    "Artificial receiver","playstation 5"," Xiaomi 12 Pro"," Watch Classic Bristol"
-  ];
-
-  List<String> productPrices = ["\$200","\$484","\$494","\$123"];
-  @override
+    @override
   Widget build(BuildContext context) {
     return  SizedBox(
       height: 350.h,

@@ -36,7 +36,7 @@ class _StepOneViewState extends State<StepOneView> {
                 child: CustomText(
                   color: kTextColor,
                   fontWieght: FontWeight.normal,
-                  fontSize: isLandscape(context) ? 20.sp : 15.sp,
+                  fontSize: isLandscape(context) ? 10.sp : 15.sp,
                   text:   'Order will be delivered between 3 - 5 business days',
 
                 )),
@@ -70,7 +70,7 @@ class _StepOneViewState extends State<StepOneView> {
                 child: CustomText(
                   text:  'Place your order before 6pm and your items will be delivered the next day',
                   fontWieght: FontWeight.normal,
-                  fontSize: isLandscape(context) ? 20.sp : 15.sp,
+                  fontSize: isLandscape(context) ? 10.sp : 15.sp,
                   color: kTextColor,
                 )),
             Radio(
@@ -102,7 +102,7 @@ class _StepOneViewState extends State<StepOneView> {
             Expanded(
                 child: CustomText(
                   color: kTextColor,
-                  fontSize: isLandscape(context) ? 20.sp : 15.sp,
+                  fontSize: isLandscape(context) ? 10.sp : 15.sp,
                   fontWieght:FontWeight.normal ,
 
                   text:

@@ -9,9 +9,6 @@ class CartProductModel {
     required this.price,
     required this.quantity,
     required this.productId,
-
-
-
   });
 
   factory CartProductModel.fromJson(Map<String, dynamic> json) {

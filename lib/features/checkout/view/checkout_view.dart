@@ -1,3 +1,4 @@
+import 'package:cart_corner_app/core/responsive/responsive.dart';
 import 'package:cart_corner_app/core/router/screens_names.dart';
 import 'package:cart_corner_app/features/checkout/view/complete_view.dart';
 import 'package:cart_corner_app/features/checkout/view/steps_content/step_one_view.dart';
@@ -37,7 +38,7 @@ class _CheckOutViewState extends State<CheckOutView> {
             appBar: AppBar(
               backgroundColor: kBackGroundColor,
             leading:  IconButton(onPressed: (){
-              Navigator.pushNamed(context, ScreensNames.bottomNav);
+              Navigator.pop(context);
             }, icon: Icon(Icons.arrow_back,color: kTextColor,)),
               elevation: 0.0,
 
@@ -160,7 +161,7 @@ class _CheckOutViewState extends State<CheckOutView> {
                     child: CustomText(
                       text: 'Billing address is the same as delivery address',
                       fontWieght: FontWeight.normal,
-                      fontSize: 16.sp,
+                      fontSize:isLandscape(context)? 10.sp:16.sp,
                       color: kTextColor,
                     ),
                   ),

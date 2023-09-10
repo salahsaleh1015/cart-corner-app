@@ -84,7 +84,7 @@ class CartView extends StatelessWidget {
                                     CustomText(
                                       text: cubit
                                           .cartProductModel[index].name,
-                                      fontSize: 18.sp,
+                                      fontSize:isLandscape(context)?10.sp : 18.sp,
                                       color: kTextColor,
                                       fontWieght: FontWeight.bold,
                                     ),
@@ -168,7 +168,7 @@ class CartView extends StatelessWidget {
                             children: [
                               CustomText(
                                   text: 'total',
-                                  fontSize: 18.sp,
+                                  fontSize:isLandscape(context)?10.sp :18.sp,
                                   color: kTextColor,
                                   fontWieght: FontWeight.normal),
                               SizedBox(

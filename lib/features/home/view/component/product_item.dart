@@ -3,6 +3,7 @@ import 'package:cart_corner_app/features/home/view/details_mobile_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../core/responsive/responsive.dart';
 import '../../../../core/router/screens_names.dart';
 import '../../../../core/style/colors.dart';
 import '../../../../widgets/custom_text.dart';
@@ -22,8 +23,8 @@ final  Product product;
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.asset(product.productImage),
-          CustomText(text: product.productName,  fontSize: 20.sp, color: kTextColor, fontWieght: FontWeight.normal),
-          CustomText(text: product.productPrice, fontSize: 15.sp, color: kPrimaryColor, fontWieght: FontWeight.normal)
+          CustomText(text: product.productName,  fontSize:isLandscape(context)?15.sp :20.sp, color: kTextColor, fontWieght: FontWeight.normal),
+          CustomText(text: product.productPrice, fontSize: isLandscape(context)?10.sp :15.sp, color: kPrimaryColor, fontWieght: FontWeight.normal)
         ],
       ),
     );

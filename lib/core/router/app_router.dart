@@ -1,6 +1,4 @@
 import 'package:cart_corner_app/core/router/screens_names.dart';
-import 'package:cart_corner_app/features/auth/view/desktop_login.dart';
-import 'package:cart_corner_app/features/auth/view/desktop_register.dart';
 import 'package:cart_corner_app/features/auth/view/login_screen.dart';
 import 'package:cart_corner_app/features/auth/view/register_screen.dart';
 import 'package:cart_corner_app/features/bottom_nav/view/bottom_nav_view.dart';
@@ -24,10 +22,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const LoginScreen());
       case ScreensNames.registerMobile:
         return MaterialPageRoute(builder: (_) => const RegisterScreen());
-      case ScreensNames.loginDeskTop:
-        return MaterialPageRoute(builder: (_) => const DesktopLogin());
-      case ScreensNames.registerDeskTop:
-        return MaterialPageRoute(builder: (_) => const DeskTopRegister());
+
       case ScreensNames.homeMobile:
         return MaterialPageRoute(builder: (_) =>  const HomeMobileView());
       case ScreensNames.profile:

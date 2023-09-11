@@ -4,14 +4,10 @@ import 'package:cart_corner_app/features/bottom_nav/view/bottom_nav_view.dart';
 import 'package:cart_corner_app/features/bottom_nav/view/controller/bottom_nav_cubit.dart';
 import 'package:cart_corner_app/features/cart/cart_view_model/cart_cubit.dart';
 import 'package:cart_corner_app/features/profile/view/profile_view.dart';
-import 'package:cart_corner_app/platforms/desktop.dart';
-import 'package:cart_corner_app/platforms/mobile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'features/auth/view/register_screen.dart';
-import 'features/cart/view/cart_view.dart';
 
 void main() {
   runApp(const MyApp());
